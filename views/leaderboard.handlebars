@@ -1,0 +1,22 @@
+<main class="non-game-main">
+    <div class="subheader-div">
+        <h2 class="subheader">LEADERBOARD</h2>
+    </div>
+    {{#each users}}
+        <div class="top-five">
+            <ul class="top-five-name"> {{username}}</ul>
+            <ul class="top-five-points">{{points}} PTS</ul>
+        </div>
+    {{/each}}
+
+{{!-- back to main menu button --}}
+    <div id="controls">
+        <button class="control-button">
+            <div id="back-div">
+                <i class="arrow left"></i>
+                <ul><a href="/">MENU</a></ul>  
+            </div>
+        </button>
+    </div>
+
+</main>
